@@ -18,7 +18,8 @@ spec:
       containers:
       - image: jmugu/test:7
         name: test
-        containerPort: 80
+        ports:
+        - containerPort: 80
         resources: {}
 status: {}
 ---
