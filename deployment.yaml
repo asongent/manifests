@@ -12,13 +12,14 @@ spec:
   strategy: {}
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: test
     spec:
       containers:
       - image: jmugu/test:6
         name: test
+        containerPorts:
+        - port: 80
         resources: {}
 status: {}
 ---
@@ -32,6 +33,6 @@ spec:
   type: LoadBalancer
   ports:
   - port: 80
-    targetPort: 5000
+    targetPort: 80
   selector:
     app: test
