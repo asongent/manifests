@@ -17,7 +17,7 @@ spec:
         app: test
     spec:
       containers:
-      - image: jmugu/test:5
+      - image: jmugu/test:7
         name: test
         resources: {}
 status: {}
