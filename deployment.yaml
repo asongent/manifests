@@ -16,7 +16,7 @@ spec:
         app: test
     spec:
       containers:
-      - image: jmugu/test:12
+      - image: jmugu/test:4
         name: test
         ports:
         - containerPort: 80
